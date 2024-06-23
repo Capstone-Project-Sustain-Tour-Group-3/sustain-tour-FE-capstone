@@ -6,8 +6,8 @@ import { getAdminById } from "@/services/manageAdmin/getAdminById";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useQuery } from "@tanstack/react-query";
-import { ReadOnlyField } from "@/components/ui/read-only-field";
 import { Skeleton } from "@/components/ui/skeleton";
+import { ReadOnlyField } from "@/components/ui/read-only-field";
 
 export const useGetAdminId = (id) => {
   const token = useSelector((state) => state.auth.user?.access_token); // Mengambil token dari Redux state
